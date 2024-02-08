@@ -308,7 +308,7 @@ h1{
 
     .wrapper{
         width: 100vw;
-        max-height: 1000px;
+        max-height: 1350px;
         color: var(--colorLight2);
         background-color:var(--colorDark1) ;
         overflow: hidden;
