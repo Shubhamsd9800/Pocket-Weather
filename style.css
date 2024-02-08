@@ -311,6 +311,6 @@ h1{
         height: 100vh;
         color: var(--colorLight2);
         background-color:var(--colorDark1) ;
-        overflow-x: hidden;
+        overflow: auto;
     }
 }
