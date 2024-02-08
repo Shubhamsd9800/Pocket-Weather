@@ -296,7 +296,7 @@ h1{
     margin-bottom:1px;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:800px){
     .parameter-container{
         display: flex;
         flex-direction: column;
@@ -308,9 +308,106 @@ h1{
 
     .wrapper{
         width: 100vw;
-        height: 100vh;
+        max-height: 1000px;
         color: var(--colorLight2);
         background-color:var(--colorDark1) ;
-        overflow: auto;
+        overflow: hidden;
     }
+
+    .parameter1{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 75px;
+        border-radius: 8px;
+        background: rgb(234,61,207);
+        background: linear-gradient(79deg, rgba(234,61,207,1) 12%, rgba(5,121,239,1) 52%, rgba(67,245,46,1) 92%); 
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .parameter1 .wind{
+        position: relative;
+        top: 8px;
+        font-size: 1.5rem;
+    }
+
+    .parameter2{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        width: 250px;
+        height: 75px;
+        border-radius: 8px;
+    }
+
+    .parameter2 .humi{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    .parameter2 .hum{
+        position: absolute;
+        top: 58%;
+        left: 45%;
+        font-size: 1.4rem;
+        /* transform: translate(-50%,-50%);
+        margin: 0; */
+    }
+    
+    .parameter3{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        width: 250px;
+        height: 75px;
+        border-radius: 8px;
+    }
+
+    .parameter3 .clo{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    
+    .parameter3 .cl{
+        position: absolute;
+        top: 58%;
+        left: 45%;
+        font-size: 1.4rem;
+    }
+
+    .form-container{
+        position: relative;
+        display: none;
+        width: 250px;
+        /* width: 40%;
+        max-width: 250px; */
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 0 10px;
+        top: -20px;
+        margin-top: 2rem;
+    }
+
+    .form-container input{
+        all: unset;
+        width: calc(100% - 100px);
+        height: 40px;
+        padding: 0 20px;
+        border-radius: 10px;
+        background-color: var(--colorDark2);
+        /* color: #90939b; */
+        border: 2px solid #323234;
+    }
+    
 }
